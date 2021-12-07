@@ -1,3 +1,4 @@
+import { red } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles({
@@ -17,8 +18,8 @@ export default makeStyles({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    maxHeight:'40%',
     borderRadius: '15px',
-    height: '100%',
     position: 'relative',
   },
   overlay: {
@@ -49,4 +50,8 @@ export default makeStyles({
     display: 'flex',
     justifyContent: 'space-between',
   },
+  deleteText:
+  {
+    color:red
+  }
 });
