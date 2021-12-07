@@ -4,5 +4,5 @@ const router=express.Router();
 
 router.get('/',getPosts);
 router.post('/',createPost);
-router.update('/:id',updatePost);
+router.patch('/:id',updatePost);
 export default router;
