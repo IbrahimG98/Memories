@@ -8,13 +8,16 @@ import {getPosts} from "./actions/posts";
 import useStyles from "./styles";
 
 const App = () => {
-  const [currentId,setCurrentId]=useState(null);
+  const [currentId,setCurrentId]=useState(0);
     const classes=useStyles();
     const dispatch=useDispatch();
+    const [postForEdit,setPostForEdit]=useState("");
 
     useEffect(()=>{
+      // setPostForEdit(postForEdit);
+      // console.log("Appjs post for edit", postForEdit);
       dispatch(getPosts());
-    },[dispatch]);
+    },[currentId,dispatch]);
   return (
     <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">

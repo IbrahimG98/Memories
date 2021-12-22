@@ -5,7 +5,6 @@ import moment from "moment";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
 const Post = ({ post,setCurrentId }) => {
-  console.log("This is post in a loop", post);
   const classes = useStyles();
   return (
     <Card className={classes.card}>
@@ -21,7 +20,7 @@ const Post = ({ post,setCurrentId }) => {
         </Typography>
       </div>
       <div className={classes.overlay2}>
-        <Button style={{ color: "white" }} size="small" onClick={() => {setCurrentId(post._id)}}>
+        <Button style={{ color: "white" }} size="small" onClick={() => setCurrentId(post._id)}>
           <MoreHorizIcon fontSize="medium" />
         </Button>
       </div>
