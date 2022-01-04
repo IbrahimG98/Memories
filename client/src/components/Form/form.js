@@ -36,6 +36,14 @@ const Form = ({currentId,setCurrentId}) => {
 
   };
   const handleClear=()=>{
+    // setCurrentId(null);
+    // setPostData({
+    //   creator: "",
+    //   title: "",
+    //   message: "",
+    //   tags: "",
+    //   selectedFile: "",
+    // });
   };
   return (
     <Paper className={classes.paper}>
@@ -51,7 +59,7 @@ const Form = ({currentId,setCurrentId}) => {
           variant="outlined"
           label="Creator"
           fullWidth
-          value={postData.creator}
+          value={postData?.creator}
           onChange={(e) =>
             setPostData({ ...postData, creator: e.target.value })
           }
@@ -61,7 +69,7 @@ const Form = ({currentId,setCurrentId}) => {
           variant="outlined"
           label="Title"
           fullWidth
-          value={postData.title}
+          value={postData?.title}
           onChange={(e) =>
             setPostData({ ...postData, title: e.target.value })
           }
@@ -71,7 +79,7 @@ const Form = ({currentId,setCurrentId}) => {
           variant="outlined"
           label="Message"
           fullWidth
-          value={postData.message}
+          value={postData?.message}
           onChange={(e) =>
             setPostData({ ...postData, message: e.target.value })
           }
@@ -81,7 +89,7 @@ const Form = ({currentId,setCurrentId}) => {
           variant="outlined"
           label="Tags"
           fullWidth
-          value={postData.tags}
+          value={postData?.tags}
           onChange={(e) =>
             setPostData({ ...postData, tags: e.target.value })
           }

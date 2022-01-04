@@ -1,4 +1,4 @@
-import { red } from '@material-ui/core/colors';
+import { red,green } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles({
@@ -10,6 +10,9 @@ export default makeStyles({
   },
   border: {
     border: 'solid',
+  },
+  title:{
+    color:green,
   },
   fullHeightCard: {
     height: '100%',
